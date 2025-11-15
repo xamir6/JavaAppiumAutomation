@@ -1,3 +1,4 @@
+echo "https://github.com/xamir6/JavaAppiumAutomation/commit/$(git rev-parse HEAD)"
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
