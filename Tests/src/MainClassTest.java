@@ -17,4 +17,11 @@ public class MainClassTest {
                 mainClass.getClassNumber() > 45);
     }
 
+    @Test
+    public void testGetClassString() {
+        Assert.assertTrue(
+                mainClass.getClassString().contains("hello") || mainClass.getClassString().contains("Hello"));
+
+    }
+
 }
