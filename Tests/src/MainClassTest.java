@@ -19,7 +19,7 @@ public class MainClassTest {
 
     @Test
     public void testGetClassString() {
-        Assert.assertTrue(
+        Assert.assertTrue( "getClassString() doesn`t contain \"hello\" or \"Hello\"",
                 mainClass.getClassString().contains("hello") || mainClass.getClassString().contains("Hello"));
 
     }
