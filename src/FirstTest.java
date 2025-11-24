@@ -16,15 +16,15 @@ public class FirstTest {
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         capabilities.setCapability("platformName", "Android");
-        capabilities.setCapability("deviceName", "AndroidTestDevice");
-        capabilities.setCapability("platformVersion", "15.0");
-        capabilities.setCapability("automationName", "Appium");
-        capabilities.setCapability("appPackage", "org.wikipedia");
-        capabilities.setCapability("appActivity", ".main.MainActivity");
-        capabilities.setCapability("app",
+        capabilities.setCapability("appium:deviceName", "AndroidTestDevice");
+        capabilities.setCapability("appium:platformVersion", "15.0");
+        capabilities.setCapability("appium:automationName", "UiAutomator2");
+        capabilities.setCapability("appium:appPackage", "org.wikipedia");
+        capabilities.setCapability("appium:appActivity", ".main.MainActivity");
+        capabilities.setCapability("appium:app",
                 "/Users/perokhin/Desktop/JavaAppiumAutomation/JavaAppiumAutomation/apks/org.wikipedia.apk");
 
-        driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
+        driver = new AndroidDriver(new URL("http://localhost:4723/"), capabilities);
     }
 
     @After
